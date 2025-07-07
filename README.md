@@ -41,3 +41,29 @@ Text Extraction	PyMuPDF / pdfplumber
 Medical Parsing	Custom rules + LLM (Ollama / GPT)
 Language Model	Ollama (TinyLLaMA / LLaMA3), Azure GPT, or Claude
 Translation	Azure Translator API or Google Translate API
+
+# 🧠 HealthNarrator AI – Medical Report Explainer
+
+HealthNarrator AI is an intelligent assistant that simplifies medical reports using LLMs. It translates medical jargon into plain language, flags important findings, and suggests questions patients can ask their doctor.
+
+---
+
+## 🔧 Features
+
+- Upload medical reports in PDF format
+- Extract and clean raw text from reports
+- Summarize in layman-friendly language
+- Highlight test results and remarks
+- Suggest questions for patient–doctor discussion
+- Multilingual support (e.g., English, Hindi, Tamil)
+
+---
+
+## 🚀 Setup
+
+```bash
+git clone https://github.com/yourusername/healthnarrator-ai.git
+cd healthnarrator-ai
+pip install -r requirements.txt
+ollama pull llama3
+streamlit run app.py
